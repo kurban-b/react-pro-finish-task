@@ -45,8 +45,7 @@ export function addComment(name, text, id) {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }).then((r)=>{
-            console.log(r)
+        }).then(()=>{
             dispatch({
                 type: 'publication/comments/add',
                 payload: text,
