@@ -32,6 +32,7 @@ export function loadPublication(id) {
 }
 
 export function addComment(name, text, id) {
+  console.log(id)
   return function (dispatch) {
     dispatch({
       type: "publication/comments/loading",

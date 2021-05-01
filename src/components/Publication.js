@@ -41,7 +41,7 @@ function Publication(props) {
                   <div className="no-comments">Комментариев нет</div>
                 )}
               </div>
-              <Form />
+              <Form id={params}/>
             </div>
 
             <div className="right">

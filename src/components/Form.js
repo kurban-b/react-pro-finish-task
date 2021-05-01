@@ -24,9 +24,10 @@ function Form(props) {
     if (text === "" || name === "") {
       setCheckInput(<div className="inputsCheck"> *заполните все поля </div>);
     } else {
+
+      dispatch(addComment(name, text, id));
       setText("");
       setName("");
-      dispatch(addComment(name, text, id));
     }
   }
 
