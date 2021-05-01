@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
-function Footer(props) {
-    return (
-        <footer>
-            © 2018-2019
-        </footer>
-    );
+function Footer() {
+  return <footer>© 2018-2019</footer>;
 }
 
 export default Footer;

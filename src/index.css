@@ -1,48 +1,57 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+
 img {
   width: 100%;
 }
+
 .container {
   max-width: 728px;
   margin: auto;
   height: 100vh;
   position: relative;
 }
+
 .logo {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 36px;
   text-align: center;
   padding: 25px 0;
 }
+
 .images {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.images img{
+
+.images img {
   width: 100%;
   margin-bottom: 30px;
 }
+
 .images a {
   display: block;
   width: 30%;
 }
+
 footer {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   position: absolute;
   bottom: 0;
-  color: #CCCCCC;
-  border-top: 1px solid #CCCCCC;
+  color: #cccccc;
+  border-top: 1px solid #cccccc;
   width: 100%;
   text-align: center;
   padding: 15px 0;
 }
+
 .modal-window {
   position: absolute;
   width: 100%;
@@ -53,6 +62,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .modal-window .card {
   position: relative;
   width: 620px;
@@ -62,24 +72,28 @@ footer {
   flex-wrap: wrap;
   font-size: 13px;
 }
-.modal-window .card .left{
+
+.modal-window .card .left {
   width: 55%;
 }
+
 .modal-window .card_img {
   width: 100%;
   margin-bottom: 20px;
 }
+
 .modal-window input {
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   border-radius: 3px;
   margin-bottom: 20px;
 }
+
 .modal-window .left button {
   border: none;
   outline: none;
-  background: #4997D0;
+  background: #4997d0;
   border-radius: 3px;
   padding: 8px;
   text-align: center;
@@ -88,6 +102,7 @@ footer {
   margin-bottom: 20px;
   cursor: pointer;
 }
+
 .modal-window .right button {
   display: block;
   position: absolute;
@@ -101,12 +116,15 @@ footer {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.42);
 }
+
 .modal-window .left button[disabled] {
   background-color: #5e5e5e;
 }
+
 .hidden {
   display: none;
 }
+
 .comments {
   width: 45%;
   top: 35px;
@@ -116,45 +134,52 @@ footer {
   padding: 0 20px;
   overflow-y: scroll;
 }
+
 .comment {
   margin-bottom: 10px;
 }
+
 .comments .date {
   color: #999999;
-
 }
+
 .comments .name {
   font-style: italic;
   color: rgba(73, 151, 208, 0.61);
 }
 
-
 @media (max-width: 425px) {
   .container {
     width: 100%;
   }
+
   .logo {
     font-size: 36px;
   }
+
   .images {
     display: flex;
     flex-direction: column;
   }
+
   .images a {
     display: block;
     width: 100%;
     padding: 0 20px;
   }
+
   footer {
     position: static;
     font-size: 18px;
     padding: 25px 0;
     margin-top: 50px;
   }
+
   .modal-window {
     width: 100%;
     min-height: 100%;
   }
+
   .modal-window .card {
     position: absolute;
     top: 0;
@@ -164,20 +189,23 @@ footer {
     flex-direction: column;
     padding: 0;
   }
+
   .modal-window .card .left {
     width: 100%;
   }
+
   .modal-window .left .card_img {
     width: 100%;
     margin-bottom: 20px;
   }
+
   .comments {
     position: static;
   }
+
   .modal-window .card_form {
     padding: 10px 20px;
   }
-
 }
 
 /***** loader *****/
@@ -189,6 +217,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .spinner {
   width: 80px;
   height: 80px;
@@ -201,7 +230,7 @@ footer {
 }
 
 @keyframes spin {
-  from{
+  from {
     transform: rotate(0deg);
   }
   to {
